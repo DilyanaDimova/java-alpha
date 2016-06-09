@@ -1,6 +1,6 @@
 using System;
 
-namespace GreetingName
+namespace ConcatenatedData
 {
     public class StartUp
     {
