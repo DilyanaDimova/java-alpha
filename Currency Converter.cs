@@ -36,29 +36,29 @@ namespace CurrencyConverter
                 result = number/2.53405;
              }
              else if (inputCurrent == "EUR" && outputCurrent == "USD")
-             {
-                result = number*1.79549/1.95583;
-             }
-             else if (inputCurrent == "EUR" && outputCurrent == "GBP")
-             {
-                result = number*2.53405/1.95583;
-             }
-            else if (inputCurrent == "USD" && outputCurrent == "EUR")
-            {
-                result =  number*1.95583/1.79549;
-            }
-            else if (inputCurrent == "GBP" && outputCurrent == "EUR")
-            {
-                result = number*2.53405/1.79549;
-            }
-            else if (inputCurrent == "USD" && outputCurrent == "GBP")
-            {
-                result = number*2.53405/1.79549;
-            }
-            else if (inputCurrent == "GBP" && outputCurrent == "USD")
-            {
-               result = number*1.79549/2.53405;
-            }
+	     {
+		result = number*1.95583/1.79549;
+	     }
+	     else if (inputCurrent == "EUR" && outputCurrent == "GBP")
+	     {
+		result = number*1.95583/2.53405;
+	     }
+	     else if (inputCurrent == "USD" && outputCurrent == "EUR")
+	     {
+		result =  number*1.79549/1.95583;
+	     }
+	     else if (inputCurrent == "GBP" && outputCurrent == "EUR")
+	     {
+		result = number*2.53405/1.95583;
+	     }
+	     else if (inputCurrent == "USD" && outputCurrent == "GBP")
+	     {
+		result = number*1.79549/2.53405;
+	     }
+	     else if (inputCurrent == "GBP" && outputCurrent == "USD")
+	     {
+		result = number*2.53405/1.79549;
+	     }
 			
             Console.WriteLine ("{0:F2} {1}", result, outputCurrent);
         }
